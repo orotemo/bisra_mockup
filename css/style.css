@@ -1,3 +1,8 @@
+@font-face {
+  font-family: "Biblical";
+  src: url("fonts/HadasimCLM-Regular.ttf");
+  format: "TrueType";
+}
 article,
 aside,
 details,
@@ -37,7 +42,7 @@ img#back-img {
   position: fixed;
   width: 100%;
   min-width: 100%;
-  opacity: 0.3;
+  opacity: 0.7;
   z-index: -2;
 }
 body,
@@ -232,7 +237,7 @@ table {
   border-spacing: 0;
 }
 body {
-  font: 16px/26px Helvetica, Helvetica Neue, Arial;
+  font: 18px/28px 'Biblical', Helvetica, Helvetica Neue, Arial;
 }
 .wrapper {
   width: 90%;
@@ -284,6 +289,7 @@ nav a:hover {
 }
 #main {
   padding: 2px 0;
+  width: 70%;
 }
 #main article h1 {
   font-size: 2em;
@@ -347,20 +353,33 @@ nav a:hover {
 .clearfix {
   zoom: 1;
 }
+#promoted {
+  width: 80%;
+}
 .products {
   position: relative;
+  background-color: rgba(247,242,200,0.50);
+  border-radius: 1em;
+  border: 3px solid #333;
+  box-shadow: -10px 10px 6px rgba(30,30,30,0.30);
+  overflow: hidden;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0;
+  float: left;
 }
 .products li {
   border: 3px solid #000;
   border-radius: 1em;
-  width: 11em;
-  height: 15em;
+  width: 21%;
+  height: 12em;
   overflow: hidden;
   display: block;
   float: left;
-  background: rgba(0,0,0,0.70);
-  margin: 1em;
-  color: #faf8d5;
+  background: rgba(50,50,50,0.70);
+  margin: 1.6%;
+  color: #fff;
   text-align: center;
 }
 .products li img {
@@ -375,7 +394,7 @@ nav a:hover {
 @media only screen and (min-width: 480px) {
   nav a {
     float: left;
-    width: 15%;
+    width: 100%;
     margin: 0 1.7%;
     padding: 0.1em 2% 0.4em 2%;
     margin-bottom: 0;
@@ -387,7 +406,9 @@ nav a:hover {
     margin-right: 0;
   }
   nav ul li {
-    display: inline;
+    float: right;
+    overflow: hidden;
+    width: 20%;
   }
   .oldie nav a {
     margin: 0 0.7%;
@@ -404,7 +425,7 @@ nav a:hover {
   }
   nav {
     float: right;
-    margin-right: 8%;
+    margin-right: 15%;
     width: 50%;
   }
   #main article {
