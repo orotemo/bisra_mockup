@@ -1,4 +1,3 @@
-//Green is 686447 Red 6e1317 background faf8e5
 article, aside, details, figcaption, figure, footer, header, hgroup, nav, section
   display: block
 
@@ -19,8 +18,16 @@ body
   margin: 0
   font-size: 13px
   line-height: 1.231
-  background url(../images/logo-bak.png) no-repeat 1% 6em
-
+  background-size 100%
+  background-color black
+  min-height 100%
+img#back-img
+	position fixed
+	width 100%
+	min-width 100%
+	opacity 0.3
+	z-index -2
+  
 body, button, input, select, textarea
   font-family: sans-serif
   color: #222
@@ -197,6 +204,8 @@ body
 
 #footer-container
   border-top: 20px solid #6e1317
+  visibility hidden
+  display none
 
 img#landing
 	visibility hidden
@@ -206,7 +215,7 @@ img#landing
 #header-container,
 #footer-container,
 #main aside
-  background #FAF8D5
+  background #FAF8D5 url("../images/klaf.png") repeat-x
 
 #title
   color: black
@@ -302,6 +311,27 @@ nav a:hover
 .clearfix
   zoom: 1
 
+.products
+	position relative
+	li
+		border 3px solid black
+		border-radius 1em
+		width 11em
+		height 15em
+		overflow hidden
+		display block
+		float left
+		background rgba(0,0,0,0.7)
+		margin 1em
+		color #FAF8D5
+		text-align center
+		img
+			height 50%
+			max-width 95%
+			margin 2.5%
+			border-radius 0.2em
+		span
+			padding 0.1em 1em
 @media only screen and (min-width: 480px)
   nav a
     float: left
@@ -346,13 +376,13 @@ nav a:hover
 	img#logo
 		visibility visible
 		display block
-		width 100%
+		width 20%
 		max-width 100%
 		z-index 5
-		border-radius 1em
-	img#landing
-		visibility visible
-		display block
+		border-radius 3em
+		position absolute
+		right 1em
+		top 1em
 @media only screen and (min-width: 1140px)
   .wrapper
     width: 1026px
