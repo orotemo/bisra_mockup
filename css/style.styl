@@ -20,14 +20,7 @@ body
   font-size: 13px
   line-height: 1.231
   background-size 100%
-  background-color black
   min-height 100%
-img#back-img
-	position fixed
-	width 100%
-	min-width 100%
-	opacity 0.7
-	z-index -2
   
 body, button, input, select, textarea
   font-family: sans-serif
@@ -212,11 +205,6 @@ img#landing
 	visibility hidden
 	display none
 	width 100%
-	border-radius 1em
-#header-container,
-#footer-container,
-#main aside
-  background #FAF8D5 url("../images/klaf.png") repeat-x
 
 #title
   color: black
@@ -237,7 +225,7 @@ nav a
   margin-bottom: 10px
   padding: 0.4em 0
   background: transparent
-  color: black
+  color: white
   text-align: center
   text-decoration: none
   font-weight: bold
@@ -251,7 +239,7 @@ nav a:hover
 
 #main
   padding 2px 0
-  width 70%
+  width 81%
 
 #main article h1
   font-size: 2em
@@ -316,10 +304,6 @@ nav a:hover
 	width 80%
 .products
 	position relative
-	background-color rgba(247, 242, 200, 0.5)
-	border-radius 1em
-	border 3px solid #333
-	box-shadow -10px 10px 6px rgba(30,30,30,0.3)
 	overflow hidden
 	text-align center
 	margin-left auto
@@ -327,22 +311,19 @@ nav a:hover
 	padding 0
 	float left
 	li
-		border 3px solid black
-		border-radius 1em
-		width 21%
+		width 30%
 		height 12em
 		overflow hidden
 		display block
 		float left
-		background rgba(50, 50, 50, 0.70)
 		margin 1.6%
 		color white
 		text-align center
 		img
-			height 50%
-			max-width 95%
-			margin 2.5%
-			border-radius 0.2em
+			border 1px solid #666
+			padding 0.5em
+			height 59%
+			max-width 100%
 		span
 			padding 0.1em 1em
 @media only screen and (min-width: 480px)
@@ -350,7 +331,7 @@ nav a:hover
     float: left
     width: 100%
     margin: 0 1.7%
-    padding: 0.1em 2% 0.4em 2%
+    padding: 0.1em 2% 0 2%
     margin-bottom: 0
 
   nav li:first-child a
@@ -366,6 +347,17 @@ nav a:hover
 
   .oldie nav a
     margin: 0 0.7%
+	#intro
+		overflow hidden
+		background #FEF8E5
+		margin-top 1.5em
+		article
+			float right
+			max-width 31%
+			padding 1em
+		img
+			max-width 65%
+			float left
 
 @media only screen and (min-width: 768px)
 	#main aside
@@ -377,9 +369,9 @@ nav a:hover
     float: left
 
   nav
-    float: right
-    margin-right 15%
-    width: 50%
+    float right
+    width 100%
+    background-color #686447
 
   #main article
     float: left
@@ -394,10 +386,17 @@ nav a:hover
 		width 20%
 		max-width 100%
 		z-index 5
-		border-radius 3em
-		position absolute
-		right 1em
-		top 1em
+		float right
+		margin 1em 0
+	#statistics
+		display block
+		float left
+		text-align left
+		background-color #FAF8E5
+		padding 0.2em 0.7em
+		margin-top 6.4em
+		span
+			padding 0 1em
 @media only screen and (min-width: 1140px)
   .wrapper
     width: 1026px
