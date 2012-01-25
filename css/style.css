@@ -1,6 +1,6 @@
 @font-face {
   font-family: "Biblical";
-  src: url("fonts/HadasimCLM-Regular.ttf");
+  src: Tahoma;
   format: "TrueType";
 }
 article,
@@ -235,6 +235,10 @@ body {
   width: 90%;
   margin: 0 5%;
 }
+#header-container header > div {
+  overflow: hidden;
+  width: 100%;
+}
 #footer-container {
   border-top: 20px solid #6e1317;
   visibility: hidden;
@@ -275,7 +279,7 @@ nav a:hover {
 }
 #main {
   padding: 2px 0;
-  width: 81%;
+  width: 80%;
 }
 #main article h1 {
   font-size: 2em;
@@ -339,8 +343,8 @@ nav a:hover {
 .clearfix {
   zoom: 1;
 }
-#promoted {
-  width: 80%;
+#promoted ul {
+  width: 65%;
 }
 .products {
   position: relative;
@@ -352,23 +356,44 @@ nav a:hover {
   float: left;
 }
 .products li {
-  width: 30%;
-  height: 12em;
+  width: 31%;
+  margin: 1em 1.6%;
+  border: 1px solid #ddd;
   overflow: hidden;
   display: block;
   float: left;
-  margin: 1.6%;
-  color: #fff;
+  color: #333;
   text-align: center;
+  font-size: 75%;
+}
+.products li * {
+  display: block;
 }
 .products li img {
-  border: 1px solid #666;
-  padding: 0.5em;
-  height: 59%;
-  max-width: 100%;
+  padding: 4.9%;
+  max-width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.products li img:hover {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
 }
 .products li span {
   padding: 0.1em 1em;
+}
+.products li span.price {
+  float: right;
+}
+.products li span.buy {
+  float: left;
+  font-size: 200%;
+}
+.products li.alpha {
+  margin-left: 0;
+}
+.products li.omega {
+  margin-right: 0;
 }
 @media only screen and (min-width: 480px) {
   nav a {
@@ -397,15 +422,20 @@ nav a:hover {
   overflow: hidden;
   background: #fef8e5;
   margin-top: 1.5em;
+  box-shadow: 0 4px 8px #aea895;
 }
 #intro article {
   float: right;
   max-width: 31%;
-  padding: 1em;
+  padding: 0 1.2em;
+  box-shadow: 0 4px 8px #aea895;
+  height: 273px;
 }
 #intro img {
   max-width: 65%;
   float: left;
+  background-color: #fff;
+  border-bottom: 2px solid #686447;
 }
 @media only screen and (min-width: 768px) {
   #main aside {
@@ -429,22 +459,23 @@ nav a:hover {
     float: right;
     width: 31%;
   }
-  img#logo {
+  div#logo {
+    width: 20%;
+    max-width: 90%;
+  }
+  div#logo img {
     visibility: visible;
     display: block;
-    width: 20%;
-    max-width: 100%;
     z-index: 5;
     float: right;
-    margin: 1em 0;
+    margin-top: 0.5em;
+    max-width: 20%;
   }
   #statistics {
     display: block;
     float: left;
     text-align: left;
-    background-color: #faf8e5;
     padding: 0.2em 0.7em;
-    margin-top: 6.4em;
   }
   #statistics span {
     padding: 0 1em;
@@ -452,7 +483,7 @@ nav a:hover {
 }
 @media only screen and (min-width: 1140px) {
   .wrapper {
-    width: 1026px;
+    width: 80%;
     margin: 0 auto;
   }
 }
