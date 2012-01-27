@@ -429,7 +429,7 @@ nav a:hover {
   max-width: 31%;
   padding: 0 2%;
   box-shadow: 0 4px 8px #aea895;
-  height: 273px;
+  height: 15em;
 }
 #intro img {
   max-width: 65%;
@@ -437,6 +437,7 @@ nav a:hover {
   float: left;
   background-color: #fff;
   border-bottom: 2px solid #686447;
+  height: 15em;
 }
 @media only screen and (min-width: 768px) {
   #main aside {
