@@ -1,4 +1,6 @@
 @font-face{font-family:"Biblical";src:Tahoma;format:"TrueType"}
+@import base
+
 article, aside, details, figcaption, figure, footer, header, hgroup, nav, section
   display: block
 
@@ -316,15 +318,16 @@ nav a:hover
 	padding 0
 	float left
 	li
-		width 31.0666%
-		margin 1em 1.47%
-		border 1px solid #DDD
+		width 22.45%
+		margin 1em 1.67%
+		border 1px solid #EEE
 		overflow hidden
 		display block
 		float left
 		color #333
 		text-align center
 		font-size 75%
+		line-height 1.2em
 		*
 			display block
 		img
@@ -333,14 +336,14 @@ nav a:hover
 			margin-left auto
 			margin-right auto
 		img:hover
-			-webkit-transform scale(1.1)
 			transform scale(1.1)
 		span
-			padding 0.1em 1em
+			padding 0.1em 0.2em
+		span.name
+			font-weight bold
 		span.price
-			float right
+			font-size 90%
 		span.buy
-			float left
 			font-size 200%
 	li.alpha
 		margin-left 0
@@ -420,6 +423,21 @@ nav a:hover
 		padding 0.2em 0.7em
 		span
 			padding 0 1em
+	aside#categories
+		font-size 80%
+		border none
+		box-shadow none
+		article
+			overflow hidden
+			margin 1em 0
+			line-height 1.2em	
+		img
+			width 40%
+			float right
+			margin-top 2.5em
+		div
+			width 60%
+			float left
 @media only screen and (min-width: 1140px)
   .wrapper
     width: 80%

@@ -356,15 +356,16 @@ nav a:hover {
   float: left;
 }
 .products li {
-  width: 31.0666%;
-  margin: 1em 1.47%;
-  border: 1px solid #ddd;
+  width: 22.45%;
+  margin: 1em 1.67%;
+  border: 1px solid #eee;
   overflow: hidden;
   display: block;
   float: left;
   color: #333;
   text-align: center;
   font-size: 75%;
+  line-height: 1.2em;
 }
 .products li * {
   display: block;
@@ -377,16 +378,20 @@ nav a:hover {
 }
 .products li img:hover {
   -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -o-transform: scale(1.1);
   transform: scale(1.1);
 }
 .products li span {
-  padding: 0.1em 1em;
+  padding: 0.1em 0.2em;
+}
+.products li span.name {
+  font-weight: bold;
 }
 .products li span.price {
-  float: right;
+  font-size: 90%;
 }
 .products li span.buy {
-  float: left;
   font-size: 200%;
 }
 .products li.alpha {
@@ -477,6 +482,25 @@ nav a:hover {
   }
   #statistics span {
     padding: 0 1em;
+  }
+  aside#categories {
+    font-size: 80%;
+    border: none;
+    box-shadow: none;
+  }
+  aside#categories article {
+    overflow: hidden;
+    margin: 1em 0;
+    line-height: 1.2em;
+  }
+  aside#categories img {
+    width: 40%;
+    float: right;
+    margin-top: 2.5em;
+  }
+  aside#categories div {
+    width: 60%;
+    float: left;
   }
 }
 @media only screen and (min-width: 1140px) {
