@@ -275,7 +275,7 @@ nav a {
   letter-spacing: 0.1em;
 }
 nav a:hover {
-  color: #777;
+  color: #aaa;
 }
 #main {
   padding: 2px 0;
@@ -356,8 +356,8 @@ nav a:hover {
   float: left;
 }
 .products li {
-  width: 31%;
-  margin: 1em 1.6%;
+  width: 31.0666%;
+  margin: 1em 1.47%;
   border: 1px solid #ddd;
   overflow: hidden;
   display: block;
@@ -427,12 +427,13 @@ nav a:hover {
 #intro article {
   float: right;
   max-width: 31%;
-  padding: 0 1.2em;
+  padding: 0 2%;
   box-shadow: 0 4px 8px #aea895;
   height: 273px;
 }
 #intro img {
   max-width: 65%;
+  width: 65%;
   float: left;
   background-color: #fff;
   border-bottom: 2px solid #686447;
@@ -449,11 +450,7 @@ nav a:hover {
   nav {
     float: right;
     width: 100%;
-    background-color: #686447;
-  }
-  #main article {
-    float: left;
-    width: 66%;
+    background-color: #484447;
   }
   #main aside {
     float: right;
