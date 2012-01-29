@@ -286,7 +286,7 @@ nav a:hover {
 }
 #main aside {
   color: #777;
-  padding: 1%;
+  padding-top: 1em;
 }
 #footer-container footer {
   color: #fff;
@@ -344,24 +344,40 @@ nav a:hover {
   zoom: 1;
 }
 #cart {
-  position: fixed;
-  top: 10%;
-  right: -0.4em;
-  background: #720e10 url("../images/arrow_left.png") no-repeat 0.3em 0.7em;
+  background: #720e10;
   padding: 0.4em;
   color: #fff;
-  -webkit-border-radius: 1em 0 0 1em;
-  -moz-border-radius: 1em 0 0 1em;
-  border-radius: 1em 0 0 1em;
-  width: 3em;
+  opacity: 0.8;
 }
-#cart img {
-  position: relative;
-  right: 0.4em;
-  top: 0.2em;
+#cart a {
+  background: url("../images/cart_slip.png");
+  display: block;
+  height: 24px;
+  width: 40px;
+  text-indent: -9999px;
+  float: left;
 }
-#promoted ul {
+#cart table {
+  width: 95%;
+  margin: 0 auto;
+}
+#cart table th {
+  text-align: right;
+}
+#cart table td {
+  width: 12em;
+  text-align: right;
+  background: #fff;
+  color: #000;
+  margin: 0.2em 0.5em;
+  padding: 0 0.5em;
+}
+#cart.opened a {
+  background-position: 0 -24px;
+}
+#promoted {
   width: 65%;
+  float: left;
 }
 .products {
   position: relative;
@@ -374,8 +390,7 @@ nav a:hover {
 }
 .products li {
   width: 22.45%;
-  margin: 1em 1.56%;
-  border: 1px solid #eee;
+  margin: 1em 1.7%;
   overflow: hidden;
   display: block;
   float: left;
@@ -410,6 +425,10 @@ nav a:hover {
 }
 .products li span.buy {
   font-size: 200%;
+  background: #eee;
+  -webkit-border-radius: 0.1em;
+  -moz-border-radius: 0.1em;
+  border-radius: 0.1em;
 }
 .products li.alpha {
   margin-left: 0;
@@ -463,11 +482,6 @@ nav a:hover {
   height: 15em;
 }
 @media only screen and (min-width: 768px) {
-  #main aside {
-    -webkit-box-shadow: 0 5px 10px #6e1317;
-    -moz-box-shadow: 0 5px 10px #6e1317;
-    box-shadow: 0 5px 10px #6e1317;
-  }
   #title {
     float: left;
   }
@@ -478,7 +492,7 @@ nav a:hover {
   }
   #main aside {
     float: right;
-    width: 31%;
+    width: 35%;
   }
   div#logo {
     width: 20%;
@@ -497,29 +511,28 @@ nav a:hover {
     float: left;
     text-align: left;
     padding: 0.2em 0.7em;
-  }
-  #statistics span {
+span
     padding: 0 1em;
   }
-  aside#categories {
-    font-size: 80%;
-    border: none;
-    box-shadow: none;
-  }
-  aside#categories article {
-    overflow: hidden;
-    margin: 1em 0;
-    line-height: 1.2em;
-  }
-  aside#categories img {
-    width: 40%;
-    float: right;
-    margin-top: 2.5em;
-  }
-  aside#categories div {
-    width: 60%;
-    float: left;
-  }
+}
+aside {
+  font-size: 80%;
+  border: none;
+  box-shadow: none;
+}
+aside article {
+  overflow: hidden;
+  margin: 1em 0;
+  line-height: 1.2em;
+}
+aside img {
+  width: 40%;
+  float: right;
+  margin-top: 2.5em;
+}
+aside div {
+  width: 60%;
+  float: left;
 }
 @media only screen and (min-width: 1140px) {
   .wrapper {

@@ -253,7 +253,7 @@ nav a:hover
 
 #main aside
   color: #777
-  padding: 1%
+  padding-top: 1em
 
 #footer-container footer
   color: white
@@ -309,22 +309,35 @@ nav a:hover
   zoom: 1
 
 #cart
-	position fixed
-	top 10%
-	right -0.4em
-	background #720E10 url(../images/arrow_left.png) no-repeat 0.3em 0.7em
+	background #720E10
 	padding 0.4em
 	color white
-	border-radius 1em 0 0 1em
-	width 3em
-	img
-		position relative
-		right 0.4em
-		top 0.2em
-  
+	opacity 0.8
+	a
+		background url(../images/cart_slip.png)
+		display block
+		height 24px
+		width 40px
+		text-indent -9999px
+		float left
+	table
+		width 95%
+		margin 0 auto
+		th
+			text-align right
+		td
+			width 12em
+			text-align right
+			background white
+			color black
+			margin 0.2em 0.5em
+			padding 0 0.5em
+#cart.opened
+	a
+		background-position 0 -24px
 #promoted
-	ul
-		width 65%
+	width 65%
+	float left
 .products
 	position relative
 	overflow hidden
@@ -335,8 +348,7 @@ nav a:hover
 	float left
 	li
 		width 22.45%
-		margin 1em 1.56%
-		border 1px solid #EEE
+		margin 1em 1.7%
 		overflow hidden
 		display block
 		float left
@@ -361,6 +373,8 @@ nav a:hover
 			font-size 90%
 		span.buy
 			font-size 200%
+			background #EEE
+			border-radius 0.1em
 	li.alpha
 		margin-left 0
 	li.omega
@@ -407,11 +421,6 @@ nav a:hover
 			height 15em
 
 @media only screen and (min-width: 768px)
-	#main aside
-    -webkit-box-shadow: 0 5px 10px #6e1317
-    -moz-box-shadow: 0 5px 10px #6e1317
-    box-shadow: 0 5px 10px #6e1317
-
   #title
     float: left
 
@@ -422,7 +431,7 @@ nav a:hover
 
   #main aside
     float: right
-    width: 31%
+    width: 35%
   div#logo
   	width 20%
   	max-width 90%
@@ -434,13 +443,13 @@ nav a:hover
   		margin-top 0.5em
   		max-width 20%
   #statistics
-		display block
-		float left
-		text-align left
-		padding 0.2em 0.7em
-		span
+  	display block
+  	float left
+  	text-align left
+  	padding 0.2em 0.7em
+  	span
 			padding 0 1em
-	aside#categories
+	aside
 		font-size 80%
 		border none
 		box-shadow none
