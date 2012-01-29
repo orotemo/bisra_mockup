@@ -365,12 +365,20 @@ nav a:hover {
   text-align: right;
 }
 #cart table td {
-  width: 12em;
+  width: 60%;
   text-align: right;
   background: #fff;
   color: #000;
   margin: 0.2em 0.5em;
   padding: 0 0.5em;
+  border-bottom: 1px solid #720e10;
+}
+#cart table td.numeric {
+  width: 20%;
+}
+#cart span {
+  display: block;
+  text-align: center;
 }
 #cart.opened a {
   background-position: 0 -24px;
