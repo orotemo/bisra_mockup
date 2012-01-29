@@ -39,12 +39,15 @@ body, button, input, select, textarea
   text-shadow: none
 
 a
-  color: #00e
+  color: #999
+  text-decoration none
 
 a:focus
+	color black
   outline: thin dotted
 
 a:hover, a:active
+	color black
   outline: 0
 
 abbr[title]
@@ -195,7 +198,7 @@ body
   font: 18px/28px 'Biblical',Helvetica, Helvetica Neue, Arial
 
 .wrapper
-  width: 90%
+  width: 80%
   margin: 0 5%
 
 #header-container header > div
@@ -237,14 +240,13 @@ nav a
   letter-spacing 0.1em
 
 nav a:hover
-  color: #AAA
+  color: #DDD
 
 //nav a:hover
 //  text-decoration: underline
 
 #main
   padding 2px 0
-  width 80%
 
 #main article h1
   font-size: 2em
@@ -305,6 +307,20 @@ nav a:hover
 
 .clearfix
   zoom: 1
+
+#cart
+	position fixed
+	top 10%
+	right -0.4em
+	background #720E10 url(../images/arrow_left.png) no-repeat 0.3em 0.7em
+	padding 0.4em
+	color white
+	border-radius 1em 0 0 1em
+	width 3em
+	img
+		position relative
+		right 0.4em
+		top 0.2em
   
 #promoted
 	ul
@@ -319,7 +335,7 @@ nav a:hover
 	float left
 	li
 		width 22.45%
-		margin 1em 1.67%
+		margin 1em 1.56%
 		border 1px solid #EEE
 		overflow hidden
 		display block
@@ -372,9 +388,10 @@ nav a:hover
     margin: 0 0.7%
 	#intro
 		overflow hidden
-		background #FEF8E5
+		background #F8F8F5
 		margin-top 1.5em
 		box-shadow 0 4px 8px #AEA895
+		font-size 85%
 		article
 			float right
 			max-width 31%
@@ -401,7 +418,7 @@ nav a:hover
   nav
     float right
     width 100%
-    background-color #484447
+    background-color #454545
 
   #main aside
     float: right
@@ -440,8 +457,8 @@ nav a:hover
 			float left
 @media only screen and (min-width: 1140px)
   .wrapper
-    width: 80%
-    margin: 0 auto
+    width 70%
+    margin 0 auto
 
 @media print
   *
