@@ -312,7 +312,7 @@ nav a:hover
 	background #720E10
 	padding 0.4em
 	color white
-	opacity 0.8
+	border-radius 1em
 	a
 		background url(../images/cart_slip.png)
 		display block
@@ -379,8 +379,25 @@ nav a:hover
 			font-size 90%
 		span.buy
 			font-size 200%
-			background #EEE
-			border-radius 0.1em
+			a
+				display inline-block
+				width 50%
+				background #EEE
+				padding 0.1em 0
+				border-radius 0.2em
+				color #555
+				text-shadow 3px 3px 3px rgba(255, 255, 255, 0.8)
+				box-shadow 3px 3px 3px rgba(0, 0, 0, 0.3)
+			a:hover
+				background #CCC
+			a:active
+				box-shadow 1px 1px 1px rgba(0, 0, 0, 0.3)
+			a.plus
+				border-top-left-radius 0
+				border-bottom-left-radius 0
+			a.minus
+				border-top-right-radius 0
+				border-bottom-right-radius 0
 	li.alpha
 		margin-left 0
 	li.omega

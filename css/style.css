@@ -347,7 +347,9 @@ nav a:hover {
   background: #720e10;
   padding: 0.4em;
   color: #fff;
-  opacity: 0.8;
+  -webkit-border-radius: 1em;
+  -moz-border-radius: 1em;
+  border-radius: 1em;
 }
 #cart a {
   background: url("../images/cart_slip.png");
@@ -433,10 +435,32 @@ nav a:hover {
 }
 .products li span.buy {
   font-size: 200%;
+}
+.products li span.buy a {
+  display: inline-block;
+  width: 50%;
   background: #eee;
-  -webkit-border-radius: 0.1em;
-  -moz-border-radius: 0.1em;
-  border-radius: 0.1em;
+  padding: 0.1em 0;
+  -webkit-border-radius: 0.2em;
+  -moz-border-radius: 0.2em;
+  border-radius: 0.2em;
+  color: #555;
+  text-shadow: 3px 3px 3px rgba(255,255,255,0.80);
+  box-shadow: 3px 3px 3px rgba(0,0,0,0.30);
+}
+.products li span.buy a:hover {
+  background: #ccc;
+}
+.products li span.buy a:active {
+  box-shadow: 1px 1px 1px rgba(0,0,0,0.30);
+}
+.products li span.buy a.plus {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.products li span.buy a.minus {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
 }
 .products li.alpha {
   margin-left: 0;
