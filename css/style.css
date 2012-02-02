@@ -240,10 +240,9 @@ body {
   overflow: hidden;
   width: 100%;
 }
-#footer-container {
-  border-top: 20px solid #6e1317;
-  visibility: hidden;
-  display: none;
+footer {
+  background: url("../images/ribbon-on-top.png") repeat-x;
+  padding-top: 2em;
 }
 img#landing {
   visibility: hidden;
@@ -281,6 +280,9 @@ nav a:hover {
 #main {
   padding: 2px 0;
 }
+#main article {
+  padding: 0 2%;
+}
 #main article h1 {
   font-size: 2em;
 }
@@ -290,7 +292,7 @@ nav a:hover {
 }
 #footer-container footer {
   color: #fff;
-  padding: 20px 0;
+  padding: 2.2em 0;
 }
 .ie7 #title {
   padding-top: 20px;
@@ -344,12 +346,12 @@ nav a:hover {
   zoom: 1;
 }
 #cart {
-  background: #720e10;
   padding: 0.4em;
-  color: #fff;
+  color: #000;
   -webkit-border-radius: 1em;
   -moz-border-radius: 1em;
   border-radius: 1em;
+  border: 4px dotted #777;
 }
 #cart a {
   background: url("../images/cart_slip.png");
@@ -385,8 +387,28 @@ nav a:hover {
 #cart.opened a {
   background-position: 0 -24px;
 }
+#categories {
+  font-size: 1.3em;
+}
+#categories a {
+  display: block;
+}
+#categories ul {
+  list-style: none;
+  padding: 0;
+}
+#categories ul li {
+  border-bottom: 1px dotted #000;
+}
+#categories ul li:hover {
+  background-color: #eee;
+}
 #promoted {
   width: 65%;
+  float: left;
+}
+#category_products {
+  width: 75%;
   float: left;
 }
 .products {
@@ -468,6 +490,10 @@ nav a:hover {
 .products li.omega {
   margin-right: 0;
 }
+section#about {
+  width: 75%;
+  float: left;
+}
 @media only screen and (min-width: 480px) {
   nav a {
     float: left;
@@ -525,6 +551,9 @@ nav a:hover {
   #main aside {
     float: right;
     width: 35%;
+  }
+  #main.products_page aside {
+    width: 25%;
   }
   div#logo {
     width: 20%;

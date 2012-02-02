@@ -204,10 +204,9 @@ body
 #header-container header > div
 	overflow hidden
 	width 100%
-#footer-container
-  border-top 20px solid #6e1317
-  visibility hidden
-  display none
+footer
+  background url(../images/ribbon-on-top.png) repeat-x
+  padding-top 2em
 
 img#landing
 	visibility hidden
@@ -248,8 +247,10 @@ nav a:hover
 #main
   padding 2px 0
 
-#main article h1
-  font-size: 2em
+#main article
+	padding 0 2%
+	h1
+		font-size: 2em
 
 #main aside
   color: #777
@@ -257,7 +258,7 @@ nav a:hover
 
 #footer-container footer
   color: white
-  padding: 20px 0
+  padding: 2.2em 0
 
 .ie7 #title
   padding-top: 20px
@@ -309,10 +310,10 @@ nav a:hover
   zoom: 1
 
 #cart
-	background #720E10
 	padding 0.4em
-	color white
+	color black
 	border-radius 1em
+	border 4px dotted #777
 	a
 		background url(../images/cart_slip.png)
 		display block
@@ -341,8 +342,22 @@ nav a:hover
 #cart.opened
 	a
 		background-position 0 -24px
+#categories
+	font-size 1.3em
+	a
+		display block
+	ul
+		list-style none
+		padding 0
+		li
+			border-bottom 1px dotted black
+		li:hover
+			background-color #EEE
 #promoted
 	width 65%
+	float left
+#category_products
+	width 75%
 	float left
 .products
 	position relative
@@ -402,6 +417,10 @@ nav a:hover
 		margin-left 0
 	li.omega
 		margin-right 0
+section#about
+  	width 75%
+  	float left
+
 @media only screen and (min-width: 480px)
   nav a
     float: left
@@ -453,8 +472,10 @@ nav a:hover
     background-color #454545
 
   #main aside
-    float: right
-    width: 35%
+    float right
+    width 35%
+  #main.products_page aside
+  	width 25%
   div#logo
   	width 20%
   	max-width 90%
